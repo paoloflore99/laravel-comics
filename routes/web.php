@@ -14,5 +14,16 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('/partials.welcome');
 });
+
+
+// Route::get('/', function () {
+//     return view('/layouts.public');
+// });
+
+// Route::get('/navbar', function () {
+//     return view('navbar');
+// });
+
+
