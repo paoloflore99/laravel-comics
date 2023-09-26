@@ -32,7 +32,7 @@
     
     <div class="container p-3">
         <div class="nav justify-content-between d-flex  align-items-center">
-            <img  src="/images/dc-logo.png" alt="">
+            <img class="primo-logo"   src="/images/dc-logo.png" alt="">
             @foreach ($liste as $lista)
             <ul class="navbar-nav ">
                 <li class="nav-link"><a  class="text-dark" href="#"><strong>{{$lista}}</strong></a></li>
@@ -41,8 +41,10 @@
         </div>
     </div>
 
-    <div class="sfondo-img">
+    <div class="sfondo-img"></div>
 
+    <div class="container spostato">
+        <button class="border-0 text-white p-2"><h2>CURRENT SERIES</h2></button>
     </div>
 </nav>
 
@@ -81,7 +83,7 @@ i {
 
 .sfondo-img {
     background-image: url(/images/jumbotron.jpg);
-    height: 100%;
+    height: 42%;
 }
 
 .centratura {
@@ -89,4 +91,15 @@ i {
     align-items: center
 }
 
+.primo-logo {
+    width: 70px;
+}
+
+button {
+    background-color: #0282F9;
+}
+
+.spostato {
+    margin-top: -30px;
+}
 </style>

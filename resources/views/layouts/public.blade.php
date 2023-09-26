@@ -12,9 +12,9 @@
 
 <body>
         @include('partials.navbar')
-    <header>
+    
         @include('partials.header')
-    </header>
+    
 
     <footer>
         @include('partials.footer')
