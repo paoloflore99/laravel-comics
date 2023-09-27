@@ -13,17 +13,26 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/secondo', function () {
     return view('/partials.welcome');
+}); //qui decido cosa far vedere 
+
+Route::get('/', function () {
+    return view('/layouts.public' );
+}); //qui decido cosa far vedere  slide 52
+
+Route::get('/privato', function () {
+    return view('/layouts.privato');
+}); //qui decido cosa far vedere  slide 52
+
+
+Route::get('/prova', function () {
+    return ('<h1>prova</h1>');
+}); //senza la view 
+
+Route::get('/miocontenuto', function () {
+    return view('pages.miocontenuto');
 });
 
 
-// Route::get('/', function () {
-//     return view('/layouts.public');
-// });
-
-// Route::get('/navbar', function () {
-//     return view('navbar');
-// });
-
-
+//la view non si usa per le api

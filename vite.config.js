@@ -9,3 +9,6 @@ export default defineConfig({
         }),
     ],
 });
+
+
+//file web.php nella cartella routes

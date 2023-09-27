@@ -1,5 +1,42 @@
 @use "./variables" as *;
 
-// footer {
+footer {
+    background-image: url(/public/images/footer-bg.jpg);
+    height: 50%;
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    // background-attachment: fixed;
+
+    a {
+        color: $colore-griggio;
+        text-decoration: none;
+        font-size: 0.8rem
+    };
+
+    h3 {
+        color: white;
+    }
+
+    li {
+        list-style: none
+    }
     
-// }
+
+    .colore-grizzio {
+        color: $colore-griggio;
+    }
+
+    .colore-blu {
+        color: $colore-uno;
+    }
+
+    .col-2 {
+        margin-top: 20px;
+        margin-bottom: 20px
+    }
+
+    .rientro {
+        margin-left: -30px;
+    }
+}; 
+

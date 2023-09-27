@@ -1,6 +1,7 @@
-@php
-$comics = [
-    [
+<?php
+
+return [
+            [
             "thumb"=> "https://www.coverbrowser.com/image/action-comics/1-1.jpg",
             "price"=> "$19.99",
             "series"=> "Action Comics",
@@ -72,25 +73,5 @@ $comics = [
             "series"=> "Catwoman",
             "type"=> "graphic novel"
         ]
+    
 ];
-    // Altri dati ...
-@endphp
-
-{{-- @extends('config.layouts.app') --}}
-
-
-    <header>
-        <div class="container p-5">
-            <div class="row">
-                @foreach($comics as $comic)
-                    <div class="p-3 col-2 card border-0 d-flex justify-content-between">
-                        <a href="#"><img src="{{ $comic["thumb"] }}" alt=""></a>
-                        <strong><a href="#">{{ $comic["series"] }}</a></strong>
-                    </div>
-                @endforeach
-            </div>
-        </div>
-    </header>
-
-
-    {{-- @endsection  --}}
